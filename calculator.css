@@ -1,66 +1,59 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(63, 29, 29);
 }
 body{
-    
-    width: 100%;
-    height: 100%;
+    padding-top: 20px;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background : linear-gradient(45deg, #0a0a0a, #3a4452)
+    height: 100vh;
+    background-color: hsl(189, 78%, 2%);
 }
-.calculator{
-    border: 1px solid#717377;
-    padding: 30px;
-    border-radius: 16px;
-    background: transparent;
-    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+#Calculator{
+    font-family: sans-serif;
+    background-color: hsl(0, 89%, 11%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+    color: rgb(240, 234, 234);
+    
+}
+#display{
+    width: 100%;
+    padding: 15px;
+    font-size: 2.5rem;
+    text-align: left;
+    border: none;
+    background-color: rgb(71, 1, 1);
+    color: white;
 
 }
-input{
-    width: 320px;
-    border: none;
-    padding: 24px;
-    margin: 10px;
-    background: transparent;
-    box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1);
-    font-size: 40px;
-    text-align: right;
-    cursor: pointer;
-    color: #ffffff;
-}
-input::placeholder{
-    color: #ffffff;
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 35px;
 }
 button{
-    border: none;
     width: 60px;
     height: 60px;
-    margin: 10px;
-    border-radius: 50%;
-    background: none;
-    color: #ffffff;
-    font-size: 20px;
-    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: rgb(234, 205, 205);
+    font-size: 3rem;
+    font-weight: bold;
     cursor: pointer;
 }
-.equalbtn{
-    background-color: rgb(255, 198, 93);
+
+.operator{
+    background-color: rgb(227, 101, 4);
 }
-.div{
-    background-color: rgb(110, 255, 110);
+
+.operator:hover{
+    background-color: rgb(227, 130, 56);
 }
-.mul{
-    background-color: rgba(255, 255, 152, 0.774);
-    color: #ffffff;
-}
-.add{
-     background-color: rgb(255, 101, 101);
-}
-.sub{
-background-color: rgba(90, 245, 245, 0.76);
+.operator:active{
+    background-color: rgb(238, 171, 119);
 }
